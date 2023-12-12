@@ -8,9 +8,10 @@ Bonus:
 Consigli del giorno: - regola d'oro: riciclare ovunque possibile! Questo significa che per la parte di markup possiamo recuperare html e css dell'esercizio svolto qualche giorno fa: è già tutto pronto! - il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'esercizio si riduce a poche righe :occhiolino:
 
 scaffolding
-1 - inserire gli elementi html all'interno di un div con id app
-2 - collegare vue
-3 - inserire all'interno del data l'array di film
-4 - permettere di mostrare l'img attiva
-5 - permettere ai pulsanti next e prev di cambiare immagine
-6 - mostrare le altre immagini nell'html
+
+1 - prendere createApp da vue
+2 - inserire all'interno del data l'array di film
+3 - creare variabile contatore per selezionare l'indice dell'array
+4 - creare funzione che permetta di variare l'immagine attiva 
+5 - collegare la funzione ai pulsanti
+6 - rendere visibile nella thumbnail l'immagine attiva
