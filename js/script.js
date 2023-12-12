@@ -35,6 +35,8 @@ createApp({
     methods: {
         // funzione immagine successiva 
         nextImg(){
+            clearInterval(autoplay);
+            this.autoPlay();
             if(this.activeImg == this.slides.length-1){
                 this.activeImg = 0;
             }
@@ -44,6 +46,8 @@ createApp({
         },
         // funzione immagine precedente 
         prevImg(){
+            clearInterval(autoplay);
+            this.autoPlay();
             if(this.activeImg == 0){
                 this.activeImg = this.slides.length-1;
             }
@@ -54,7 +58,7 @@ createApp({
         autoPlay (){
             this.button_disable = true
             autoplay = setInterval(()=>{
-            this.nextImg()
+                this.nextImg()
             }, 3000)
         },
         autoStop (){
