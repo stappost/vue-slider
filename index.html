@@ -15,7 +15,7 @@
 
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
-
+                
                 <div class="item" @mouseover="autoStop" @mouseleave="autoPlay">
                     <img :src="`./${slides[activeImg].image}`" :alt="slides[activeImg].title" />
                     <div class="text">
@@ -32,7 +32,7 @@
                     <div v-for="items, index in slides" 
                     class="thumb" 
                     :class="activeImg == [index] ? 'active' : ' ' "
-                    @click="activeImg = index">
+                    @click="clickThumb(index)">
                         <img :src="slides[index].image" :alt="slides[index].title" />
                     </div>
                 </div>
@@ -41,7 +41,7 @@
         </div>
         <div class="buttons">
             <button v-if="!button_disable" class="play" @click="autoPlay">play</button>
-            <button class="pause" @click="autoStop">stop</button>
+            <button v-else="button_disable" class="pause" @click="buttonStop">stop</button>
         </div>
 
     </div>

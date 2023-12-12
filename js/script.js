@@ -63,7 +63,16 @@ createApp({
         },
         autoStop (){
             clearInterval(autoplay)
+            
+        },
+        buttonStop(){
             this.button_disable = false
+            this.autoStop()
+        },
+        clickThumb(index){
+            this.activeImg = index
+            this.autoStop()
+            this.autoPlay()
         }
     }
 }).mount('#app');
