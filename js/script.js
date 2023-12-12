@@ -29,7 +29,7 @@ createApp({
                 }
             ],
             activeImg: 0,
-            
+            button_disable: false,
         }
     },
     methods: {
@@ -52,13 +52,14 @@ createApp({
             }
         },
         autoPlay (){
-            
+            this.button_disable = true
             autoplay = setInterval(()=>{
             this.nextImg()
             }, 3000)
         },
         autoStop (){
             clearInterval(autoplay)
+            this.button_disable = false
         }
     }
 }).mount('#app');

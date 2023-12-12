@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="buttons">
-            <button class="play" @click="autoPlay">play</button>
+            <button v-if="!button_disable" class="play" @click="autoPlay">play</button>
             <button class="pause" @click="autoStop">stop</button>
         </div>
 
