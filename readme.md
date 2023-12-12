@@ -6,3 +6,11 @@ Bonus:
 2- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
 3- quando il mouse va in hover sullo slider, bloccare l'autoplay e farlo riprendere quando esce
 Consigli del giorno: - regola d'oro: riciclare ovunque possibile! Questo significa che per la parte di markup possiamo recuperare html e css dell'esercizio svolto qualche giorno fa: è già tutto pronto! - il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'esercizio si riduce a poche righe :occhiolino:
+
+scaffolding
+1 - inserire gli elementi html all'interno di un div con id app
+2 - collegare vue
+3 - inserire all'interno del data l'array di film
+4 - permettere di mostrare l'img attiva
+5 - permettere ai pulsanti next e prev di cambiare immagine
+6 - mostrare le altre immagini nell'html
