@@ -51,5 +51,14 @@ createApp({
                 this.activeImg--;
             }
         },
+        autoPlay (){
+            
+            autoplay = setInterval(()=>{
+            this.nextImg()
+            }, 3000)
+        },
+        autoStop (){
+            clearInterval(autoplay)
+        }
     }
 }).mount('#app');
